@@ -1,15 +1,12 @@
 <template name="post_stream">
 	<div class="container">
-		<div class="no-logged">
-			<p>Sign in.</p>
-			
+		<div class="not-logged">
+			<p>Sign in. Only show if person not logged in.</p>
 		</div>
 		<div class="logged-in">
-			<p>latest posts</p>
-			<p>documentation for accounts here: <a href="https://atmospherejs.com/joshowens/accounts-entry">atmosophere</a></p>
+			<p>Latest posts only appear to those who are logged in.</p>
 			<!-- given from blog package -->
-			<div>{{> blogIndex}}</div> 
-			<div>{{> blogLatest}}</div>
+			{{> blogLatest}}
 		</div>
 	</div>
 </template>
