@@ -1,2 +1,32 @@
 <!-- add sinlge post template to get rid of social sharing
 myShowBlogTemplate -->
+
+<template name="show_blog">
+	<div id="meteor-blog" class="blog-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-11 col-md-8 col-md-offset-2">
+          {{> showBody}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="showBody">
+  <article class="post">
+    <h2>{{title}}</h2>
+    <div class="post-meta">
+     Published on {{blogFormatDate publishedAt}}
+      {{> blogTags }}
+    </div>
+    <div id="commentable-area" class="the-content">
+      {{{html}}}
+    </div>
+  </article>
+  <div class="blog-back-link pull-left">
+    <a href="{{pathFor 'blogIndex'}}"><i class="fa fa-caret-left"></i>Back to the Blog</a>
+  </div>
+  {{> disqus this}}
+
+</template>

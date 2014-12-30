@@ -12,22 +12,28 @@
 2. Get pages routed up correctly 
 
 #### TO-DO: PRIORITY
-1. only signed in accounts being able to view posts 
+1. only signed in accounts being able to view posts > done, but janky 
 
 2. invite only login access. -- how to do this!?
 
-3. add stylus. ugly at first, it's OK.
+3. ~~add stylus. ugly at first, it's OK.~~
 
 4. hosting ... hm. ? later day. 
 
-5. wtf is going on with dashboard .. 
+5. ~~wtf is going on with dashboard .. ~~
 
 #### TO-DO: NON-PRIORITY
-1. commenting from the users. 
+1. ~~commenting from the users.~~
 2. invite only, invite only, INVITE ONLYYYYY people can see these posts. 
+3. set up alerts, when someone trys to access /blog , etc, when not logged in.
 
-##### thoughts ... 
-somehow attach the email list to the app, like as a file? hm. 
+##### questions ... 
+1. How do I test it?
+2. How do I know it is secure?
+3. Do I have appropriate code in the respective server and client blocks? Or switch it up?
+4. Is my blog redirect the best way to handle the situation?
+5. What is going on in the meteor mongo db ... 
+6. Oh, and how do I do invite only?! somehow attach the email list to the app, like as a file? hm. 
 
 #### resources
 1. (like blog thing from differential - https://github.com/Differential/meteor-blog
