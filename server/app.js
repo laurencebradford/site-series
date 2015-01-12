@@ -1,11 +1,11 @@
 // need to add admin roles. 
+var blogAdmin = ['Tqj3r483sq4zuje2W'];
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
   	Blog.config ({adminRole: 'blogAdmin', authorRole: 'blogAuthor'});
   });
 }
-
 
 /* 
 above works, but janky. and i cant add my posts! 

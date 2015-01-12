@@ -14,6 +14,8 @@
 #### TO-DO: PRIORITY
 1. only signed in accounts being able to view posts > done, but janky 
 
+... oh and i need to have admin access. 
+
 2. invite only login access. -- how to do this!?
 
 3. ~~add stylus. ugly at first, it's OK.~~
@@ -38,4 +40,5 @@
 #### resources
 1. (like blog thing from differential - https://github.com/Differential/meteor-blog
 2. documentation for accounts here: https://atmospherejs.com/joshowens/accounts-entry
+3. https://www.youtube.com/watch?v=RpQTPWvD6HA -- around min 37, talks about account login stuff
 .... will add rest later. 

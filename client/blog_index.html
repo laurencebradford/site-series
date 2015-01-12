@@ -1,0 +1,45 @@
+<template name="blog_index">
+  <div id="meteor-blog" class="blog-list">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h1>series list</h1> 
+            <h2>
+              <small>organized by tag, click to see entire part</small>
+            </h2>
+          </div>
+          {{> indexLoop}}
+          {{blogPager}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="indexLoop">
+  {{#each posts}}
+    <article class="post">
+      <h2>
+        <a href="{{pathFor 'blogShow'}}">{{title}}</a>
+      </h2>
+      <div class="post-meta">
+        Published on {{blogFormatDate publishedAt}}
+        {{> blog_tags }}
+      </div>
+      <div class="the-content">
+        {{{excerpt}}}
+      </div>
+    </article>
+  {{else}}
+    This blog is looking pretty empty...
+  {{/each}}
+</template>
+
+<template name="blog_tags">
+  {{#if tags}}
+    <div class="post-tags">
+      <p> &ndash; Tagged: {{blogFormatTags tags}}</p>
+    </div>
+  {{/if}}
+</template>
